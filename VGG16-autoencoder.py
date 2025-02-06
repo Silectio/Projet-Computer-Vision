@@ -52,6 +52,7 @@ def train(train_loader):
             loss.backward()
             optimizer.step()
             total_loss += loss.item()
+        print(f"Epoch {epoch + 1}, Loss: {total_loss / len(train_loader)}")
 
 if __name__ == '__main__':
     transform = transforms.Compose([

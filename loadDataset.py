@@ -17,7 +17,7 @@ class WildfireDataset(Dataset):
 
                 # On enlève bien les lables pour le train split !!!
                 if split == 'train':
-                    self.labels.append(None) 
+                    self.labels.append(0) 
                 else:
                     self.labels.append(cls_idx)
 
